@@ -1,0 +1,70 @@
+\hypertarget{class_shelf}{}\doxysection{Shelf Class Reference}
+\label{class_shelf}\index{Shelf@{Shelf}}
+Inheritance diagram for Shelf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shelf}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shelf_a03dc333d3b7dc5aa505e8530a478dec9}\label{class_shelf_a03dc333d3b7dc5aa505e8530a478dec9}} 
+{\bfseries Shelf} (int id)
+\item 
+\mbox{\Hypertarget{class_shelf_a4f48ffab95b51883fc9e536c15254882}\label{class_shelf_a4f48ffab95b51883fc9e536c15254882}} 
+int {\bfseries get\+Id} ()
+\item 
+\mbox{\Hypertarget{class_shelf_a02037637bc8dd6458f35559a9b1a40fd}\label{class_shelf_a02037637bc8dd6458f35559a9b1a40fd}} 
+array$<$ bool, 4 $>$ {\bfseries get\+Slot\+Status} ()
+\item 
+\mbox{\Hypertarget{class_shelf_ac5a63c3ec5559883034408aee6b6ca14}\label{class_shelf_ac5a63c3ec5559883034408aee6b6ca14}} 
+array$<$ \mbox{\hyperlink{class_pallet}{Pallet}} $\ast$, 4 $>$ \& {\bfseries get\+Pallets} ()
+\item 
+\mbox{\Hypertarget{class_shelf_a47ed08e7ec0ef5b08199359bfee4e51b}\label{class_shelf_a47ed08e7ec0ef5b08199359bfee4e51b}} 
+\mbox{\hyperlink{class_pallet}{Pallet}} \& {\bfseries remove\+Pallet} (int slot)
+\item 
+\mbox{\Hypertarget{class_shelf_a2fb65132aaa533b993c2622ca6f3c8a3}\label{class_shelf_a2fb65132aaa533b993c2622ca6f3c8a3}} 
+bool {\bfseries insert\+Pallet} (int slot, \mbox{\hyperlink{class_pallet}{Pallet}} $\ast$pallet)
+\item 
+bool \mbox{\hyperlink{class_shelf_a99ae0b49763e037c2de34543a3b48fbf}{is\+Empty}} () override
+\item 
+bool \mbox{\hyperlink{class_shelf_a0d3e82f83e2e98001cf78a76b116c62d}{is\+Full}} () override
+\item 
+\mbox{\Hypertarget{class_shelf_a31df0e705ca92a1bf4c496c73f120e33}\label{class_shelf_a31df0e705ca92a1bf4c496c73f120e33}} 
+void {\bfseries sort\+Pallets} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shelf_ab8c5704278232fadd76b9241908c91f5}\label{class_shelf_ab8c5704278232fadd76b9241908c91f5}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \mbox{\hyperlink{class_shelf}{Shelf}} \&shelf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shelf_a99ae0b49763e037c2de34543a3b48fbf}\label{class_shelf_a99ae0b49763e037c2de34543a3b48fbf}} 
+\index{Shelf@{Shelf}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Shelf@{Shelf}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Shelf\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_container}{IContainer}}.
+
+\mbox{\Hypertarget{class_shelf_a0d3e82f83e2e98001cf78a76b116c62d}\label{class_shelf_a0d3e82f83e2e98001cf78a76b116c62d}} 
+\index{Shelf@{Shelf}!isFull@{isFull}}
+\index{isFull@{isFull}!Shelf@{Shelf}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool Shelf\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_container}{IContainer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Shelf.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\hypertarget{_shelf_8h_source}{}\doxysection{Shelf.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Finn on 20/05/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef UNTITLED1\_SHELF\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define UNTITLED1\_SHELF\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}IContainer.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Pallet.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_shelf}{Shelf}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_container}{IContainer}}\{}
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14     \textcolor{keyword}{const} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{15     array<Pallet*, 4> pallets;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_shelf}{Shelf}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} getId();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     array<bool, 4> getSlotStatus();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     array<Pallet*, 4> \&getPallets();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{class_pallet}{Pallet}} \&removePallet(\textcolor{keywordtype}{int} slot);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} insertPallet(\textcolor{keywordtype}{int} slot, \mbox{\hyperlink{class_pallet}{Pallet}}* pallet);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} isEmpty() \textcolor{keyword}{override};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{bool} isFull() \textcolor{keyword}{override};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} sortPallets();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keyword}{friend} ostream \&operator<<(ostream \&os, \textcolor{keyword}{const} \mbox{\hyperlink{class_shelf}{Shelf}} \&shelf);}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED1\_SHELF\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,73 @@
+\hypertarget{class_pallet}{}\doxysection{Pallet Class Reference}
+\label{class_pallet}\index{Pallet@{Pallet}}
+Inheritance diagram for Pallet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pallet}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pallet_aff39179851154122df38fc5580674a29}\label{class_pallet_aff39179851154122df38fc5580674a29}} 
+{\bfseries Pallet} (int id, int item\+Count, string \&item\+Name, int item\+Capacity)
+\item 
+\mbox{\Hypertarget{class_pallet_a1b28703bd37551b95f3d04438dac1b2d}\label{class_pallet_a1b28703bd37551b95f3d04438dac1b2d}} 
+int {\bfseries get\+Id} ()
+\item 
+\mbox{\Hypertarget{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}\label{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}} 
+int {\bfseries get\+Item\+Count} ()
+\item 
+\mbox{\Hypertarget{class_pallet_a1b09bcfc0d207ef108d2753cb9d2fef4}\label{class_pallet_a1b09bcfc0d207ef108d2753cb9d2fef4}} 
+string \& {\bfseries get\+Item\+Name} ()
+\item 
+\mbox{\Hypertarget{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}\label{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}} 
+int {\bfseries get\+Remaining\+Space} ()
+\item 
+\mbox{\Hypertarget{class_pallet_ac3b5ced656f86cada4299e890b0f3813}\label{class_pallet_ac3b5ced656f86cada4299e890b0f3813}} 
+void {\bfseries reallocate\+Empty\+Pallet} (string \&item\+Name, int item\+Capacity)
+\item 
+bool \mbox{\hyperlink{class_pallet_a7f3791171ad5c42ee1f39c60c6b4a561}{is\+Empty}} () override
+\item 
+bool \mbox{\hyperlink{class_pallet_a5bc07da739397b10f671652e3d3daff2}{is\+Full}} () override
+\item 
+\mbox{\Hypertarget{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}\label{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}} 
+bool {\bfseries take\+One} ()
+\item 
+\mbox{\Hypertarget{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}\label{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}} 
+bool {\bfseries put\+One} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pallet_ad082ae2372e69a4b07a9c70842a2df5e}\label{class_pallet_ad082ae2372e69a4b07a9c70842a2df5e}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \mbox{\hyperlink{class_pallet}{Pallet}} \&pallet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pallet_a7f3791171ad5c42ee1f39c60c6b4a561}\label{class_pallet_a7f3791171ad5c42ee1f39c60c6b4a561}} 
+\index{Pallet@{Pallet}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Pallet\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_container}{IContainer}}.
+
+\mbox{\Hypertarget{class_pallet_a5bc07da739397b10f671652e3d3daff2}\label{class_pallet_a5bc07da739397b10f671652e3d3daff2}} 
+\index{Pallet@{Pallet}!isFull@{isFull}}
+\index{isFull@{isFull}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool Pallet\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_container}{IContainer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pallet.\+h\end{DoxyCompactItemize}

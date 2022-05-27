@@ -1,0 +1,44 @@
+\hypertarget{_employee_8h_source}{}\doxysection{Employee.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Finn on 20/05/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef UNTITLED1\_EMPLOYEE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define UNTITLED1\_EMPLOYEE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_employee}{Employee}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \textcolor{keyword}{const} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{string} name; \textcolor{comment}{//iemand zou zijn naam moeten kunnen veranderen; dit zou niet immutable moeten zijn}}
+\DoxyCodeLine{17     \textcolor{keywordtype}{bool} busy;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{bool} forkLiftCertificate;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_employee}{Employee}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{string}\& name, \textcolor{keywordtype}{bool} forkLiftCertificate);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} getId();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{string}\& getName();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} setName(\textcolor{keywordtype}{string}\& name);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} isBusy();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} setBusy(\textcolor{keywordtype}{bool} busy);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} hasForkLiftCertificate();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} setForkLiftCertificate(\textcolor{keywordtype}{bool} forkLiftCertificate);}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED1\_EMPLOYEE\_H}}
+
+\end{DoxyCode}

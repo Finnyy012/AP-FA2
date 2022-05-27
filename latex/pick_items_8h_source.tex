@@ -1,0 +1,32 @@
+\hypertarget{pick_items_8h_source}{}\doxysection{pick\+Items.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Finn on 20/05/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef UNTITLED1\_PICKITEMS\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define UNTITLED1\_PICKITEMS\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Task.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Employee.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{classpick_items}{PickItems}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_task}{Task}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keywordtype}{string} itemName;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} itemCount;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classpick_items}{PickItems}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{string}\& itemName, \textcolor{keywordtype}{int} itemCount);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{string}\& getItemName();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} getItemCount();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{bool} runTask(\mbox{\hyperlink{class_employee}{Employee}} \&employee, vector<Shelf*>\& shelves) \textcolor{keyword}{override};}
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED1\_PICKITEMS\_H}}
+
+\end{DoxyCode}

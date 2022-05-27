@@ -1,0 +1,48 @@
+\hypertarget{_pallet_8h_source}{}\doxysection{Pallet.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Finn on 20/05/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef UNTITLED1\_PALLET\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define UNTITLED1\_PALLET\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}IContainer.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_pallet}{Pallet}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_container}{IContainer}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keyword}{const} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} itemCount;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{string} itemName;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} itemCapacity;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_pallet}{Pallet}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} itemCount, \textcolor{keywordtype}{string}\& itemName, \textcolor{keywordtype}{int} itemCapacity);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} getId();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} getItemCount();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{string} \&getItemName();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} getRemainingSpace();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} reallocateEmptyPallet(\textcolor{keywordtype}{string}\& itemName, \textcolor{keywordtype}{int} itemCapacity);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{bool} isEmpty() \textcolor{keyword}{override};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} isFull() \textcolor{keyword}{override};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{bool} takeOne();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} putOne();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keyword}{friend} ostream \&operator<<(ostream \&os, \textcolor{keyword}{const} \mbox{\hyperlink{class_pallet}{Pallet}} \&pallet);}
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED1\_PALLET\_H}}
+
+\end{DoxyCode}
